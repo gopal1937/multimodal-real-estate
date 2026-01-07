@@ -69,35 +69,38 @@ The project uses the following major Python libraries:
 
 All project data and outputs are organized within a single Google Drive folder. Once Google Drive is mounted in Google Colab, the notebooks automatically read from and write to this structure.
 
+```
 Drive/
 └── multimodal-real-estate/
-├── data/
-│ ├── raw/
-│ │ ├── train(1).xlsx
-│ │ ├── test2.xlsx
-│ │ ├── test_image_coords.csv
-│ │ └── images/
-│ │   ├── train/
-│ │   └── test/
-│ └── processed/
-│    ├── train_image_coords.csv
-│    ├── X_img_train.npy
-│    ├── X_img_val.npy
-│    ├── X_img_test2.npy
-│    ├── X_tab_train.npy
-│    ├── X_tab_val.npy
-│    ├── X_tab_test2.npy
-│    ├── X_train.csv
-│    ├── X_val.csv
-│    ├── y_train.csv
-│    ├── y_val.csv
-│    ├── y_train_mm.npy
-│    └── y_val_mm.npy
-├── predictions/
-│ └── 23115047_final.csv
-└── data_fetcher.py
-└── models/
-  └── catboost_multimodal.cbm
+    ├── data/
+    │   ├── raw/
+    │   │   ├── train(1).xlsx
+    │   │   ├── test2.xlsx
+    │   │   ├── test_image_coords.csv
+    │   │   └── images/
+    │   │       ├── train/
+    │   │       └── test/
+    │   └── processed/
+    │       ├── train_image_coords.csv
+    │       ├── X_img_train.npy
+    │       ├── X_img_val.npy
+    │       ├── X_img_test2.npy
+    │       ├── X_tab_train.npy
+    │       ├── X_tab_val.npy
+    │       ├── X_tab_test2.npy
+    │       ├── X_train.csv
+    │       ├── X_val.csv
+    │       ├── y_train.csv
+    │       ├── y_val.csv
+    │       ├── y_train_mm.npy
+    │       └── y_val_mm.npy
+    ├── models/
+    │   └── catboost_multimodal.cbm
+    ├── predictions/
+    │   └── 23115047_final.csv
+    └── data_fetcher.py
+```
+
 
 
 ### Directory Description
@@ -198,6 +201,7 @@ This CSV file contains the predicted property prices for the test dataset and fo
 - Additional notebooks such as `geospatial_visual_eda.ipynb` and `GradCAM.ipynb` are included for exploratory analysis and model explainability.
 - The complete experimental analysis, visualizations, and results discussion are provided in `23115047_report.pdf`.
 - The project follows the prescribed submission guidelines and file naming conventions.
+
 
 
 
