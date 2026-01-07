@@ -64,9 +64,6 @@ The project uses the following major Python libraries:
 - torch / tensorflow  
 - opencv-python, pillow  
 
-Most dependencies are pre-installed in Google Colab. Any missing packages can be installed using:
-```bash
-pip install <package-name>
 
 ## 📁 Google Drive Directory Structure
 
@@ -201,6 +198,7 @@ This CSV file contains the predicted property prices for the test dataset and fo
 - Additional notebooks such as `geospatial_visual_eda.ipynb` and `GradCAM.ipynb` are included for exploratory analysis and model explainability.
 - The complete experimental analysis, visualizations, and results discussion are provided in `23115047_report.pdf`.
 - The project follows the prescribed submission guidelines and file naming conventions.
+
 
 
 
