@@ -1,16 +1,17 @@
-# 🏠 Satellite Imagery Based Property Valuation (Multimodal Regression)
+#  Satellite Imagery Based Property Valuation (Multimodal Regression)
 
-## 📌 Project Overview
+##  Project Overview
 This project focuses on predicting residential property prices using a **multimodal regression approach** that combines traditional tabular housing data with satellite imagery. In addition to structural property attributes, visual environmental context such as surrounding infrastructure, green cover, and waterfront proximity is incorporated to improve valuation accuracy.
 
 The project uses latitude and longitude coordinates to programmatically fetch satellite images for each property and extracts visual features using a Convolutional Neural Network (CNN). These image-based features are fused with engineered tabular features to train a multimodal regression model for property price prediction.
 
 All experiments and data processing were implemented using **Google Colab**, with datasets and intermediate files stored and accessed via **Google Drive** for persistence and reproducibility.
 
-## 📂 Repository Structure
+##  Repository Structure
 
 The repository is organized as follows:
 
+```
 ├── data_fetcher.py
 ├── preprocessing.ipynb
 ├── model_training.ipynb
@@ -20,6 +21,8 @@ The repository is organized as follows:
 ├── 23115047_final.csv
 ├── 23115047_report.pdf
 └── README.md
+```
+
 
 
 ### File Descriptions
@@ -33,7 +36,7 @@ The repository is organized as follows:
 - **23115047_report.pdf** – Final project report containing EDA, architecture, results, and insights  
 - **README.md** – Setup and execution instructions for the project
 
-## ⚙️ Setup & Environment
+##  Setup & Environment
 
 This project is designed to run entirely on **Google Colab**, with all data storage and intermediate outputs handled through **Google Drive**. No local environment setup is required.
 
@@ -65,7 +68,7 @@ The project uses the following major Python libraries:
 - opencv-python, pillow  
 
 
-## 📁 Google Drive Directory Structure
+##  Google Drive Directory Structure
 
 All project data and outputs are organized within a single Google Drive folder. Once Google Drive is mounted in Google Colab, the notebooks automatically read from and write to this structure.
 
@@ -114,7 +117,7 @@ Drive/
 
 All processed files and outputs are generated automatically once the input datasets are placed in the `data/raw/` directory.
 
-## ▶️ How to Run the Project
+##  How to Run the Project
 
 Follow the steps below to execute the project end-to-end using Google Colab.
 
@@ -161,7 +164,7 @@ multimodal-real-estate/predictions/23115047_final.csv
 
 These notebooks are optional and are intended for analysis and interpretability.
 
-## 🧠 Model Summary
+##  Model Summary
 
 Two modeling approaches are implemented in this project:
 
@@ -178,7 +181,7 @@ Two modeling approaches are implemented in this project:
 - Root Mean Squared Error (RMSE)
 - R² Score
 
-## 📤 Output Files
+##  Output Files
 
 The primary output of this project is the final prediction file generated using the trained multimodal regression model.
 
@@ -194,13 +197,14 @@ This CSV file contains the predicted property prices for the test dataset and fo
 - **File name:** `23115047_report.pdf`
 - The report includes exploratory data analysis, geospatial and visual insights, model architecture, results comparison, and explainability analysis.
 
-## 📝 Notes & Additional Information
+##  Notes & Additional Information
 
 - All satellite images are programmatically fetched using latitude and longitude coordinates.
 - CNN-based image feature extraction is used to capture environmental and neighborhood context.
 - Additional notebooks such as `geospatial_visual_eda.ipynb` and `GradCAM.ipynb` are included for exploratory analysis and model explainability.
 - The complete experimental analysis, visualizations, and results discussion are provided in `23115047_report.pdf`.
 - The project follows the prescribed submission guidelines and file naming conventions.
+
 
 
 
