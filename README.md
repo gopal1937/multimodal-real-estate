@@ -117,6 +117,22 @@ Drive/
 
 All processed files and outputs are generated automatically once the input datasets are placed in the `data/raw/` directory.
 
+##  Satellite Image Download (data_fetcher.py)
+
+Satellite images for each property are programmatically downloaded using the **Mapbox Static Images API** based on latitude and longitude coordinates provided in the dataset.
+
+The script `data_fetcher.py`:
+- Reads geographic coordinates from the tabular data
+- Calls the Mapbox Static Images API to fetch satellite images for each property
+- Saves the downloaded images into structured Google Drive directories:
+  - `data/raw/images/train/` for training properties
+  - `data/raw/images/test/` for test properties
+
+These satellite images capture surrounding environmental context such as road networks, vegetation, water bodies, and urban density, which are later used for CNN-based feature extraction in the multimodal pipeline.
+
+> **Note:** A valid Mapbox access token is required to use the API. The token should be provided by the user and configured within the script or environment variables.
+
+
 ##  How to Run the Project
 
 Follow the steps below to execute the project end-to-end using Google Colab.
@@ -204,6 +220,7 @@ This CSV file contains the predicted property prices for the test dataset and fo
 - Additional notebooks such as `geospatial_visual_eda.ipynb` and `GradCAM.ipynb` are included for exploratory analysis and model explainability.
 - The complete experimental analysis, visualizations, and results discussion are provided in `23115047_report.pdf`.
 - The project follows the prescribed submission guidelines and file naming conventions.
+
 
 
 
